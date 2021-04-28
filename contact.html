@@ -109,51 +109,17 @@
   </nav>
 
   <!-- Corps de la page-->
-  <div class=" mt-5 mx-auto w-75">
+  <form action="traitement_formulaire.php" method="post" >
+      
+          <fieldset id="fld1">
+            <p><label for="nom" >Nom:</label><br><input id="inpunom" class="form-control" type="text" id="nom" name="nom" tabindex="1"/></br></p>
+            <p><label for="email">Email:</label><br><input type="text" id="email" class="form-control" name="email" tabindex="2"/></br></p>
+            <p><label for="objet">Objet:</label><br><input type="text" id="objet" class="form-control" name="objet" tabindex="3"/></br></p>
+            <p><label for="message">Message:</label><br><textarea id="message" class="form-control" name="message" tabindex="4" cols="30" rows="8" placeholder="Votre message ici."></textarea></br></p>
+            <div class="div-bouton"><input id="envoi" class="btn btn-default" type="submit" name="envoi" value="Envoyer" /></div>
+          </fieldset>
 
-    <div id ="formulaire">
-       
-          <p style="font-size:26px;text-align: center">Fomulaire de contact</p>
-
-              <div class="form-group form-group-sm has-feedback"style="margin: 0 auto;">
-                <label for="DEM_NOM" >Nom <span class="cxAsterix">*</span></label>
-                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="NOM"  required>
-                
-              </div>
-              <div style="margin-top:1%;">
-                <label for="DEM_PRENOM" >Prénom <span class="cxAsterix">*</span></label>
-                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="PRENOM"  required>
-                
-              </div>
-
-              <div style="margin-top:1%;">
-                <label for="DEM_TEL" >Téléphone <span class="cxAsterix">*</span></label>
-                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="TEL"  required>
-                
-              </div>
-
-              <div style="margin-top:1%;">
-                <label for="DEM_EMAIL" >Email <span class="cxAsterix">*</span></label>
-                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="EMAIL"  required>
-                
-              </div>    
-              <div class="form-group "  style="margin-top: 20px;">
-                  Message
-              </div>
-              <div style="margin-top: 20px;">           
-                <textarea class="form-control input-sm"type="text" name="COMMENTAIRE" style="padding:5% 10%;" placeholder=" "></textarea>
-            </div>
-
-            <button style=" display: block;margin : auto;"type="button" class="btn btn-outline-primary mt-5 ">Envoyer</button>
-            <div class="form-group "  style="margin-top: 20px;font-size: 10px; text-align:center;">
-                  Les données personnelles recueillies dans le cadre de ce formulaire font l'objet d'un traitement informatique. Elles ne sont en aucun cas réutilisées à d'autres fins.Je m'engage à respecter la confidentialité des données pendant le délai légal de 10 ans (obligations fiscale et comptable) de conservation et d'archivage des données.
-            </div>
-
-            <p style="text-align: center;">Merci pour votre visite ! A bientôt !  </p>
-
-     </div>
-  </div>
-    
+        </form>
   <!-- Footer -->
  <!-- Footer -->
 <footer class="footer">
