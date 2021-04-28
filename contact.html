@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portefolio_Davia_Moujabber</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Boopstrap CSS-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  
+  * {
+  font-family:Roboto,Sans-serif;
+  }
+  
+  body {
+  color:black;
+  background-image:url(images/fond3.png);
+  /*background-color: #87CEEB;*/
+  } 
+  
+  img {
+  width: 50px;
+  height: 50px;
+  }
+
+  html {
+      position: relative;
+      min-height: 100%;
+  }
+   
+  .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: #000000;
+      color: #FFFFFF;
+  }
+  #formulaire {
+  background-color : #ADD8E6 ;width:100%;opacity: 0.8;padding:14% 10%;
+  }
+  .dropdown-menu{
+    background-color:#ADD8E6; 
+  }
+  html {
+    position: relative;
+    min-height: 100%;
+}
+ 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    color: #FFFFFF;
+}
+  </style>
+
+
+</head>
+<body>
+  
+  <!-- Menu -->
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 150px;">
+    <div class="container">
+      <a class="navbar-brand" href="page_accueil.html">
+            <img src="images/photo_davia.jpg" alt="Chargement de la page.."><span> Davia Moujabber </span>
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="page_accueil.html"style="font-size: 18px;">Accueil
+                </a>
+          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">
+          Projets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="2018-2020.html">Statistiques & Reporting</a>
+          <a class="dropdown-item" href="2020-2021.html">Réseaux & Management</a>
+        </div>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competences.html"style="font-size: 18px;">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Document/cvDavia.pdf" target="_blank"style="font-size: 18px;">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"style="font-size: 18px;">Contact<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Corps de la page-->
+  <div class=" mt-5 mx-auto w-75">
+
+    <div id ="formulaire">
+       
+          <p style="font-size:26px;text-align: center">Fomulaire de contact</p>
+
+              <div class="form-group form-group-sm has-feedback"style="margin: 0 auto;">
+                <label for="DEM_NOM" >Nom <span class="cxAsterix">*</span></label>
+                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="NOM"  required>
+                
+              </div>
+              <div style="margin-top:1%;">
+                <label for="DEM_PRENOM" >Prénom <span class="cxAsterix">*</span></label>
+                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="PRENOM"  required>
+                
+              </div>
+
+              <div style="margin-top:1%;">
+                <label for="DEM_TEL" >Téléphone <span class="cxAsterix">*</span></label>
+                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="TEL"  required>
+                
+              </div>
+
+              <div style="margin-top:1%;">
+                <label for="DEM_EMAIL" >Email <span class="cxAsterix">*</span></label>
+                <input style="margin-top:1%;color:black;"type="text" class="form-control input-sm" name="EMAIL"  required>
+                
+              </div>    
+              <div class="form-group "  style="margin-top: 20px;">
+                  Message
+              </div>
+              <div style="margin-top: 20px;">           
+                <textarea class="form-control input-sm"type="text" name="COMMENTAIRE" style="padding:5% 10%;" placeholder=" "></textarea>
+            </div>
+
+            <button style=" display: block;margin : auto;"type="button" class="btn btn-outline-primary mt-5 ">Envoyer</button>
+            <div class="form-group "  style="margin-top: 20px;font-size: 10px; text-align:center;">
+                  Les données personnelles recueillies dans le cadre de ce formulaire font l'objet d'un traitement informatique. Elles ne sont en aucun cas réutilisées à d'autres fins.Je m'engage à respecter la confidentialité des données pendant le délai légal de 10 ans (obligations fiscale et comptable) de conservation et d'archivage des données.
+            </div>
+
+            <p style="text-align: center;">Merci pour votre visite ! A bientôt !  </p>
+
+     </div>
+  </div>
+    
+  <!-- Footer -->
+ <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12"style="color: white;font-size: 12px;text-align: center;">
+                <i>Davia Moujabber | Copyright 2021</i>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+
+
+</html>

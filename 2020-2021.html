@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Boopstrap CSS-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+  font-family:Roboto,Sans-serif;
+}
+
+body {
+  background-image:url(images/fond3.png); 
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: white;
+}
+h4 {
+  font-size:16px;
+  padding-top: 6px;
+  
+}
+.davia {
+  width: 50px;
+  height: 50px;
+  }
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #ADD8E6;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #ADD8E6;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+p{ 
+font-size:12px; 
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+ 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    color: #FFFFFF;
+}
+.dropdown-menu{
+    background-color:#ADD8E6; 
+  }
+  .btn-outline{
+  background-color: #ADD8E6;
+}
+button : hover {
+
+background-color: #ADD8E6;
+}
+/* Footer */
+@media (min-width: 769px)
+.ast-footer-overlay {
+    padding-top: 2.66666em;
+    padding-bottom: 2.66666em;
+}
+}
+
+</style>
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 150px;">
+    <div class="container">
+      <a class="navbar-brand" href="page_accueil.html">
+            <img class="davia" src="images/photo_davia.jpg" alt="Chargement de la page.."><span> Davia Moujabber </span>
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="page_accueil.html"style="font-size: 18px;">Accueil
+                </a>
+          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">
+          Projets 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="2018-2020.html">Statistiques & Reporting</a>
+          <a class="dropdown-item" href="#">Réseaux & Management<span class="sr-only">(current)</span></a>
+        </div>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competences.html"style="font-size: 18px;">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Document/cvDavia.pdf" target="_blank"style="font-size: 18px;">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"style="font-size: 18px;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Mes réalisations !</h1>
+
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Administration_windows')"> Administration windows</button>
+  <button class="btn" onclick="filterSelection('Scripting')"> Scripting Powershell</button>
+  <button class="btn" onclick="filterSelection('Management')"> Management</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Administration_windows">
+    <div class="content">
+      <img src="images/DHCP.png" alt="Chargement de l'image..." style="width:100%">
+      <h4>Installation,configuration Serveur DC-DHCP</h4>
+      <p>Ce fichier retrace l'installation et la configuration d' un serveur DC-DHCP<a href="2020-2021/Compte rendu/ESI31P_Moujabber_TD-DC-DHCP.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+  <div class="column Administration_windows">
+    <div class="content">
+    <img src="images/ADDS.png" alt="Chargement de l'image..." style="width:100%">
+      <h4>Création et manipulation d'objets ADDS-MMC</h4>
+      <p>Dans ce fichier, vous pourrez découvrir comment créer et manipuler les objets ADDS<a href="2020-2021/Compte rendu/ESI3P_Moujabber_TD-ADDS.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+  <div class="column Administration_windows">
+    <div class="content">
+    <img src="images/zone.png" alt="Chargement de l'image..." style="width:100%">
+      <h4>Zone secondaire&Transfert de zone |Liste de blocage -Cache DNS </h4>
+      <p>Dans ce compte rendu, vous pourrez voir comment créer une zone secondaire et effectuer des transferts de zone<a href="2020-2021/Compte rendu/ESI3P_Moujabber_TD-DNS2d.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+  
+  <div class="column Scripting">
+    <div class="content">
+      <img src="images/script.jpg" alt="Chargement de l'image..." style="width:100%">
+      <h4>Initiation aux scripts Powershell</h4>
+      <p>Dans cet écrit, vous pouvez avoir accès à plusieurs commandes qui vont vous aidez à débuter en scripting powershell<a href="2020-2021/Compte rendu/ESI3P_Moujabber_TP_Initiation_aux_scripts_powershell.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+  <div class="column Scripting">
+    <div class="content">
+    <img src="images/cmde.png" alt="Chargement de l'image..." style="width:100%">
+      <h4>Gestion des commandes</h4>
+      <p>Tout comme l'écrit précédent, dans ce travail pratique, vous pouvez voir comment s'effectue la gestion des commandes<a href="2020-2021/Compte rendu/ESI3P_Moujabber_TD-GestComWS&AD.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+  
+  <div class="column Administration_windows">
+    <div class="content">
+      <img src="images/partage.png" alt="Car" style="width:100%">
+      <h4>Redondance des dossiers partagés avec DF</h4>
+      <p>Ce fichier permet de comprendre et de savoir gérer la redondance des dossiers partagés<a href="2020-2021/Compte rendu/ESI3P_Moujabber_TD-DFS.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+  <div class="column Management">
+    <div class="content">
+    <img src="images/hopital.png" alt="Chargement de l'image..." style="width:100%">
+      <h4>En quoi le numérique optimise le pôle médico-technique de l'hôpital Saint-Joseph?</h4>
+      <p >Dans le cadre de cette présentation je me suis attardée sur le pôle médico-technique & quaité de l'hôpital Saint-Joseph. En réponse à cette problématique, deux axes d'analyses se sont dégagés : la réorganisation numérique et les riques de sécurité de ce pôle<a href="2020-2021/Compte rendu/Hopital_Saint_Joseph_Moujabber_Davia.pdf"style="color: black;"> (Cliquez ici pour plus de contenu)</a></p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+<a style="color: black;text-decoration: none;" href="2018-2020.html"><button style=" display: block;margin : auto;text-decoration: none;"type="button" class="btn btn-outline pull-left">Précédent</button></a>
+<br>
+<!-- Footer -->
+  <footer class="ast-footer-overlay mt-5"style="bottom: 0;width:100%;background-color : #120D16;">
+    <div>
+      <p style="color: white;font-size: 12px;text-align: center;">
+        <i>Davia Moujabber | Copyright 2021</i>
+      </p>
+    </div>
+  </footer>
+
+
+<script>
+filterSelection("all");
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</body>
+</html>
