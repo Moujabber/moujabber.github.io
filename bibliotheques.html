@@ -37,9 +37,7 @@
   white-space: nowrap;
   overflow-x: hidden;
 }
-.time {
-	fond-weight : bold;
-}
+
  
 .timeline ol {
   font-size: 0;
@@ -319,8 +317,8 @@ a {
   </div>
 </section>
 <script type="text/javascript">
-	
-	  elH = document.querySelectorAll(".timeline li > div"),
+	const timeline = document.querySelector(".timeline ol"),
+	elH = document.querySelectorAll(".timeline li > div"),
   arrows = document.querySelectorAll(".timeline .arrows .arrow"),
   arrowPrev = document.querySelector(".timeline .arrows .arrow__prev"),
   arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
