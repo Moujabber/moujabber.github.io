@@ -34,7 +34,7 @@
   height: 50px;
   }
   .mySlides {display: none;}
-img {vertical-align: middle;margin-left: 66px;}
+img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -45,17 +45,13 @@ img {vertical-align: middle;margin-left: 66px;}
 
 /* Caption text */
 .text {
-  color: white;
-  font-size: 30px;
+  color: #848484;
+  font-size: 50px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 99px;
-  width: 45%;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-}
-.textp {
-  color: white;
-  font-size: 20px;
 }
 
 
@@ -64,10 +60,10 @@ img {vertical-align: middle;margin-left: 66px;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color:black;
+  background-color: #bbb;
   border-radius: 75%;
   display: inline-block;
-  transition: background-color 1s ease;
+  transition: background-color 0.6s ease;
 }
 
 .active {
@@ -77,21 +73,18 @@ img {vertical-align: middle;margin-left: 66px;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 15s;
-}
-.a {
-  border-color: black;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .9} 
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .9} 
+  from {opacity: .4} 
   to {opacity: 1}
 }
 
@@ -108,20 +101,19 @@ img {vertical-align: middle;margin-left: 66px;}
 <body>
   
   <!-- Menu -->
-   <!-- Menu -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 150px;">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-            <img class="davia-img" src="images/photo_davia.jpg" alt="Chargement de la page.."><span> Davia Moujabber </span>
+            <img class="davia-img"src="images/photo_davia.jpg" alt="Chargement de la page.."><span> Davia Moujabber </span>
           </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"> 
+          <li class="nav-item ">
             <a class="nav-link" href="index.html"style="font-size: 18px;">Accueil
-                 <span class="sr-only">(current)</span>
+                 
                 </a>
           </li>
           <li class="nav-item dropdown">
@@ -143,8 +135,8 @@ img {vertical-align: middle;margin-left: 66px;}
           <li class="nav-item">
             <a class="nav-link" href="Document/cvDavia.pdf"target="_blank" style="font-size: 18px;">CV</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="font-size: 18px;">Bibliothèque</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="font-size: 18px;">Bibliothèque<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html"style="font-size: 18px;">Contact</a>
@@ -154,38 +146,110 @@ img {vertical-align: middle;margin-left: 66px;}
     </div>
   </nav>
   <!-- Corps de la page -->
+ <!-- <section class="timeline">
+  <ol>
+    <li>
+      <div>
+        <time>PMBOOK</time>
+        <br>Documentation sur la <a  href="Document/pmbok.pdf" target="_blank">PMBOOK</a>
+        Référence en terme de gestion de projet
 
-<div class="slideshow-container"style="margin-top: 221px;">
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Plan compatble</time>
+        Le <a  href="Document/plan-comptable.pdf" target="_blank">plan comptable </a>contient huit classes
+      </div>
+    </li>
+     <li>
+      <div>
+        <time>Process Maps</time>
+        <br>Documentation about the <a  href="Document/process_map.pdf" target="_blank">process mapping</a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>6 Segma</time>
+        <br>Documentation about <a  href="Document/6s.pdf" target="_blank">the 6S</a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Cycle time</time>
+        <br>Documentation about <a  href="Document/cyle_time.pdf" target="_blank">the cycle time</a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Statistique descriptive</time>
+        <a  href="Document/LogicielR_50_ACP_3_TP_villes_corrige.pdf" target="_blank">Exercices corrigées sur les statistiques descriptive sur R</a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Régressions Linéaires Simples</time>
+        <a  href="Document/LogicielR_30_1_RegressionLineaireSimple_Théorie.pdf" target="_blank">Cours sur les régressions linéaires simples sur R</a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Régressions Linéaires Multiples</time>
+        <a  href="Document/LogicielR_30_2_RegressionLineaireSimple_Exemple.pdf" target="_blank">Cours sur les régressions linéaires multiples sur R</a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>Analyse multidimensionnelle: ACP</time>
+        <a href="Document/LogicielR_50_ACP_1_LaTheorie.pdf" target="_blank"> Méthode d'analyse de donnée </a>
+      </div>
+    </li>
+    <li></li>
+  </ol>
+   
+  <div class="arrows">
+    <button class="arrow arrow__prev disabled" disabled>
+      <img src="arrow_prev.svg" alt="prev timeline arrow">
+    </button>
+    <button class="arrow arrow__next">
+      <img src="arrow_next.svg" alt="next timeline arrow">
+    </button>
+  </div>
+</section>
+<script type="text/javascript">
+	
+</script>-->
+<!--<div class="slideshow-container">
 
 
 <div class="mySlides fade">
   
-  <img src="images/pmbok.jpg" style="width:75%">
+  <img src="Document/pmbok.pdf" style="width:75%">
   <div class="text"><b>PMBOOK</b>
-       <p style="color:white;background-color:black;opacity: 0.9" class="textp"><br>Documentation sur le <a  href="Document/pmbok.pdf" target="_blank">PMBOOK</a>
-        <br>Référence en terme de gestion de projet</div></p>
+        <br>Documentation sur le <a  href="Document/pmbok.pdf" target="_blank">PMBOOK</a>
+        Référence en terme de gestion de projet</div>
 </div>
 
 <div class="mySlides fade">
  
-  <img src="images/plan-compta.jpg" style="width:75%">
-  <div class="text" style="color:white;background-color:black;opacity: 0.9"><b>Plan compatble</b><br><p class="textp" style="font-size: 25px;">Le <a  href="Document/plan-comptable.pdf" target="_blank">plan comptable </a>contient huit classes</p></div>
+  <img src="images/photo_davia.jpg" style="width:75%">
+  <div class="text"><b>Plan compatble</b>Le <a  href="Document/plan-comptable.pdf" target="_blank">plan comptable </a>contient huit classes</div>
 </div>
 
 <div class="mySlides fade">
   
-  <img src="images/process-map.gif" style="width:75%">
-  <div class="text"style="color:white;background-color:black;opacity: 0.9"><b>Process Maps </b><p class="textp"><br>Documentation about the <a  href="Document/process_map.pdf" target="_blank">process mapping</a></p></div>
+  <img src="images/photo_davia.jpg" style="width:75%">
+  <div class="text"><b>Process Maps </b>Documentation about the <a  href="Document/process_map.pdf" target="_blank">process mapping</a></div>
 </div>
 <div class="mySlides fade">
   
-  <img src="images/statistique.png" style="width:75%">
-  <div class="text"style="color:white;background-color:black;opacity: 0.9"><b>Statistique descriptive</b><p class="textp"><a  href="Document/LogicielR_50_ACP_3_TP_villes_corrige.pdf" target="_blank"><br>Exercices corrigées sur les statistiques descriptive sur R</a></p></div>
+  <img src="images/photo_davia.jpg" style="width:75%">
+  <div class="text"><b>Statistique descriptive</b><a  href="Document/LogicielR_50_ACP_3_TP_villes_corrige.pdf" target="_blank">Exercices corrigées sur les statistiques descriptive sur R</a></div>
 </div>
 <div class="mySlides fade">
  
-  <img src="images/reg.png" style="width:75%">
-  <div class="text"style="color:white;background-color:black;opacity: 0.9"><b>Régressions Linéaires Simples</b><br><p class="textp"><a  href="Document/LogicielR_30_1_RegressionLineaireSimple_Théorie.pdf" target="_blank">Cours sur les régressions linéaires simples sur R</a></p></div>
+  <img src="images/photo_davia.jpg" style="width:75%">
+  <div class="text"><b>Régressions Linéaires Simples</b><a  href="Document/LogicielR_30_1_RegressionLineaireSimple_Théorie.pdf" target="_blank">Cours sur les régressions linéaires simples sur R</a></div>
 </div>
 
 </div>
@@ -220,6 +284,22 @@ function showSlides() {
   setTimeout(showSlides, 3500); // Change image every 2 seconds
 }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
